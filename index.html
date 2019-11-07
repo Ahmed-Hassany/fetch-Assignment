@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fetch Assignment</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <main>
+            <div class="wrapper clearfix">
+
+                    <section id="main-section">
+                            <button onclick="getData();">Get posts</button>
+                            <button onclick="refresh();"><i class="fas fa-sync-alt"></i></button>
+                            <h3 ><code id="status"></code></h3>
+                       <table border="1" id="myTable">
+                               <thead>
+                                   <tr>
+                                       <th>Id</th>
+                                       <th>User Id</th>
+                                       <th>Title</th>
+                                       <th>Body</th>
+                                   </tr>            
+                               </thead>
+                               <tbody >
+                       
+                               </tbody>
+                           </table>
+                   
+                       </section>
+
+                       
+                <section id="l-aside">
+                    
+            <div class="addForm">
+                <h3>Add Post : <span class="addMsg"></span></h3>
+                
+                <input type="text" id="title" placeholder="The title">
+                <input type="text" id="body" placeholder="The body">
+                <input type="text" id="userId" placeholder="User Id">
+                <button class="addBtn" onclick="addData();"><i class="far fa-plus-square"></i></button>
+                
+            </div><hr>
+            <div class="editForm">
+                <h3>Edit Post : <span class="editMsg"></span></h3>
+                
+                <input type="text" id="title2" placeholder="The title">
+                <input type="text" id="body2" placeholder="The body">
+                <input type="text" id="theId2" placeholder="Id">
+                <input type="text" id="userId2" placeholder="User Id">
+                <button class="editBtn" onclick="updateData();"><i class="fas fa-edit"></i></button>
+                
+            </div><hr>
+            <div class="delForm">
+                    <h3>Edit Post : <span class="editMsg"></span></h3>
+                    <input type="text" id="theId" placeholder="Id">
+                    <button class="delBtn" onclick="delData();"><i class="far fa-trash-alt"></i></button>
+                </div>
+                </section>
+
+               
+                
+            </div>
+        </main>
+        <script src="myScript.js"></script>
+    </body>
+</html>
